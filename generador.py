@@ -1,8 +1,9 @@
-import random
-import string
+import random # Importa el módulo para generar valores aleatorios
+import string # Importa el módulo con conjuntos de caracteres predefinidos
 
+# Función que genera una contraseña segura
 def generar_contraseña(longitud=12, mayus=True, minus=True, numeros=True, simbolos=True):
-    caracteres = ""
+    caracteres = ""  # Inicializa la cadena que contendrá todos los caracteres posibles
     if mayus:
         caracteres += string.ascii_uppercase
     if minus:
